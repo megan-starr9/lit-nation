@@ -1,0 +1,29 @@
+<div class="row header-block">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 header-section text-center">
+    <a href='/'><h1>Lit Nation</h1></a>
+  </div>
+</div>
+<div class="row nav-block">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+    <!-- Not Logged In -->
+    <% if(!session || !session.user) { %>
+    <ul>
+      <li><a href='/login'>Login</a></li>
+      <li><a href='/register'>Register</a></li>
+      <li><a href='/about'>About</a></li>
+    </ul>
+    <!-- End Not Logged In -->
+    <% } else { %>
+    <!-- User -->
+    <ul>
+      <li><a href='/author'>Profile</a></li>
+      <li><a href='/series'>Plan</a></li>
+      <li><a href='/write'>Write</a></li>
+      <li><a href='/logout'>Logout</a></li>
+    </ul>
+    <% } %>
+    <!-- End User -->
+
+  </div>
+</div>

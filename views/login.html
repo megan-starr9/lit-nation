@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <% include bits/head.html %>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container-fluid page-block">
+      <% include bits/header.html %>
+      <div class="row content-block">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 content-section">
+
+          <!-- Page Content -->
+
+          <h1>Log In</h1>
+          <%= (form) ? form.get_failure() : '' %>
+          <form action="" method="post" class="main-form">
+            <label>Login: </label><input type="text" name="username" value="<%= (form) ? form.get_value('username') : '' %>" /> <%= (form) ? form.get_error('username') : '' %><br>
+            <label>Password: </label><input type="password" name="password" value="<%= (form) ? form.get_value('password') : '' %>"/> <%= (form) ? form.get_error('password') : '' %><br>
+            <input type="submit" value="Submit" class="main-submit"/>
+          </form>
+
+          <!-- end Page -->
+
+        </div>
+      </div>
+      <% include bits/footer.html %>
+    </div>
+  </body>
+</html>

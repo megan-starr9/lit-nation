@@ -1,0 +1,61 @@
+body {
+  font-size: 14px;
+  font-family: Verdana;
+}
+body a {
+  font-weight: 600;
+}
+body a:hover {
+  text-decoration: none;
+}
+
+div.header-block {
+  height: 200px;
+}
+div.header-block .header-section {
+  height: 200px;
+}
+
+div.nav-block {
+  text-transform: uppercase;
+}
+div.nav-block ul {
+  margin: 0px;
+  float: right;
+}
+div.nav-block li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+
+div.content-block {
+}
+div.content-block .content-section {
+  min-height: 500px;
+  padding: 10px 20px;
+}
+
+div.footer-block {
+  font-size: 10px;
+}
+
+div.text-block {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+form.main-form label {
+  margin: 10px 5px;
+}
+form.main-form .main-submit {
+  display:block;
+  margin: 10px auto;
+  padding: 5px 30px;
+  font-size: 16px;
+}

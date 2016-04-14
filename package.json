@@ -1,0 +1,17 @@
+{
+  "name": "litnation",
+  "version": "1.0.0",
+  "description": "Collaborative Writing App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megan Lyle",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0"
+  }
+}

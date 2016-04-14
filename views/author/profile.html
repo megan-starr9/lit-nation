@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <% include ../bits/head.html %>
+    <title><%= user.username %>'s Profile</title>
+  </head>
+  <body>
+    <div class="container-fluid page-block">
+      <% include ../bits/header.html %>
+      <div class="row content-block">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 content-section">
+
+          <!-- Page Content -->
+
+          <h1> <%= user.username %> </h1>
+          <div class="text-block">
+            <p>
+              A user profile!
+            </p>
+          </div>
+
+          <!-- end Page -->
+
+        </div>
+      </div>
+      <% include ../bits/footer.html %>
+    </div>
+  </body>
+</html>
