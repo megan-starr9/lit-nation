@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <% include ../bits/head.html %>
+    <title>Your Series</title>
+  </head>
+  <body>
+    <div class="container-fluid page-block">
+      <% include ../bits/header.html %>
+      <div class="row content-block">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 content-section">
+
+          <!-- Page Content -->
+
+          <h1>Series Listing</h1>
+
+          <% serieslist.forEach(function(series) { %>
+
+            <h2><a href='/series/<%= series.id %>'><%= series.title %></a></h2>
+              <p>Summary!</p>
+
+          <% }); %>
+
+          <!-- end Page -->
+
+        </div>
+      </div>
+      <% include ../bits/footer.html %>
+    </div>
+  </body>
+</html>

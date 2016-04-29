@@ -52,7 +52,7 @@ function setup_session(app) {
    **/
 function setup_routes(app) {
   [
-    'home','author'/*,'series','story',
+    'home','author','series'/*,'story',
     'character','setting'*/
   ].map(
     function(routeName){
